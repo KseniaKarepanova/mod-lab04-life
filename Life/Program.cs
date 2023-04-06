@@ -82,7 +82,7 @@ namespace cli_life
         static void Load()
         {
             Console.Clear();
-
+            count_step = 0;
             string file_name = Console.ReadLine();
             board = TextFile.Read_File(file_name);
 

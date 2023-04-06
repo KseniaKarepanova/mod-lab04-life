@@ -9,7 +9,7 @@ namespace cli_life
 {
     public class TextFile
     {
-        //сохранение поля в текстовый файл
+        
         public static void Save_File(string file_name, Board board)
         {
 
@@ -33,7 +33,7 @@ namespace cli_life
 
         }
 
-        //загрузка поля из текстового файла
+        
         public static Board Read_File(string file_name)
         {
 
@@ -56,7 +56,7 @@ namespace cli_life
 
             file.Close();
             str = 0;
-            // file = new StreamReader("D:/Учеба 3 курс/МИПиС/Лабораторная работа 4/ЛР4.txt");
+           
             file = new StreamReader(file_name);
             while (!file.EndOfStream)
             {

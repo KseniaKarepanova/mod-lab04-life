@@ -18,7 +18,7 @@ namespace UnitTestProject
         [TestMethod]
         public void CheckRead()
         {
-            string file = "блок.txt";
+            string file = "block.txt";
             Board board = TextFile.Read_File(file);
             Assert.IsTrue(board.Cells[0, 0].IsAlive);
             Assert.IsTrue(board.Cells[0, 1].IsAlive);
@@ -52,7 +52,7 @@ namespace UnitTestProject
         [TestMethod]
         public void CheckModeling()
         {
-            string file = "блок.txt";
+            string file = "block.txt";
             Board board = TextFile.Read_File(file);
             board.Advance();
 
@@ -71,7 +71,7 @@ namespace UnitTestProject
         [TestMethod]
         public void CheckCountIsAlive()
         {
-            string file = "лодка.txt";
+            string file = "boat.txt";
             Board board = TextFile.Read_File(file);
             int count_isAlive = board.Count_isAlive();
             int expected_count = 5;
@@ -81,7 +81,7 @@ namespace UnitTestProject
         [TestMethod]
         public void CheckTypeFigures()
         {
-            string file1 = "перевернутая лодка.txt";
+            string file1 = "reverse_boat.txt";
             string file2 = "test_save.txt";
 
             Board board1 = TextFile.Read_File(file1);
@@ -101,7 +101,7 @@ namespace UnitTestProject
         [TestMethod]
         public void CheckStablePhase()
         {
-            string file = "блок.txt";
+            string file = "block.txt";
             int step_stable_phase = 0;
             int expected_count = 0;
             Board board = TextFile.Read_File(file);
@@ -120,8 +120,8 @@ namespace UnitTestProject
         [TestMethod]
         public void CheckSimmetry()
         {
-            string file1 = "пруд.txt";
-            string file2 = "лодка.txt";
+            string file1 = "pond.txt";
+            string file2 = "boat.txt";
             string file3 = "ox_simmetry.txt";
             string file4 = "oy_simmetry.txt";
 
